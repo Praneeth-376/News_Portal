@@ -1,14 +1,19 @@
 # 📰 NewsHub Pro - MERN Stack News Portal
 
-A full-stack, personalized news aggregation platform built with the MERN stack (MongoDB, Express.js, React, Node.js) featuring AI-powered recommendations and real-time news updates.
-
-![MERN Stack](https://img.shields.io/badge/MERN-Full%20Stack-green)
-![React](https://img.shields.io/badge/React-18.2.0-blue)
-![Node.js](https://img.shields.io/badge/Node.js-Express-brightgreen)
-![MongoDB](https://img.shields.io/badge/MongoDB-Database-green)
+![Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black)
+![Render](https://img.shields.io/badge/Deployed%20on-Render-blue)
+![MongoDB](https://img.shields.io/badge/Database-MongoDB%20Atlas-green)
+![MERN](https://img.shields.io/badge/Stack-MERN-red)
 
 ## 🎯 Live Demo
-[Add your live demo link here]
+
+[![Live Demo](https://img.shields.io/badge/🚀-Live%20Demo-brightgreen)](https://news-portal-5oxi9lyyo-praneeth-376s-projects.vercel.app)
+
+**🌐 Live Application:** [https://news-portal-5oxi9lyyo-praneeth-376s-projects.vercel.app](https://news-portal-5oxi9lyyo-praneeth-376s-projects.vercel.app)
+
+**🔗 API Base URL:** [https://news-portal-zs8s.onrender.com/api](https://news-portal-zs8s.onrender.com/api)
+
+---
 
 ## 📸 Screenshots
 | Home Page | Article View | Dark Mode |
@@ -103,3 +108,4 @@ personalized-news-portal/
 ```bash
 git clone https://github.com/yourusername/personalized-news-portal.git
 cd personalized-news-portal
+
