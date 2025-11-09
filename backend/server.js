@@ -13,18 +13,16 @@ const app = express();
 
 // FIXED CORS configuration - allow both localhost ports
 // FIXED CORS configuration - allow both localhost and production domains
+// EMERGENCY FIX: Allow all origins
 app.use(cors({
-  origin: [
-    'https://news-portal-git-main-praneeth-376s-projects.vercel.app',
-    'https://news-portal-funltr1u8-praneeth-376s-projects.vercel.app',
-    'http://localhost:3000', 
-    'http://localhost:5173', 
-    'http://localhost:5174'
-  ],
+  origin: true, // Allow ALL origins
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-  allowedHeaders: ['Content-Type', 'Authorization']
+  allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With']
 }));
+
+// Handle preflight requests
+app.options('*', cors());
 
 // Basic middleware
 app.use(express.json({ limit: '10mb' }));
