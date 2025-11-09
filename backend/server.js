@@ -12,8 +12,15 @@ const prefRoutes = require('./src/routes/prefRoutes');
 const app = express();
 
 // FIXED CORS configuration - allow both localhost ports
+// FIXED CORS configuration - allow both localhost and production domains
 app.use(cors({
-  origin: ['http://localhost:3000', 'http://localhost:5173', 'http://localhost:5174'],
+  origin: [
+    'https://news-portal-git-main-praneeth-376s-projects.vercel.app',
+    'https://news-portal-funltr1u8-praneeth-376s-projects.vercel.app',
+    'http://localhost:3000', 
+    'http://localhost:5173', 
+    'http://localhost:5174'
+  ],
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization']
