@@ -15,10 +15,16 @@ const app = express();
 // FIXED CORS configuration - allow both localhost and production domains
 // EMERGENCY FIX: Allow all origins
 // EMERGENCY FIX for Railway - Allow all origins
+// EMERGENCY FIX: Allow ALL origins for Render
 app.use(cors({
-  origin: "*",
-  credentials: true
+  origin: "*", // Allow ALL origins
+  credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With']
 }));
+
+// Handle preflight requests explicitly
+app.options('*', cors());
 // Basic middleware
 app.use(express.json({ limit: '10mb' }));
 app.use(express.urlencoded({ extended: true, limit: '10mb' }));
