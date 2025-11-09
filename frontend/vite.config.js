@@ -25,5 +25,7 @@ export default defineConfig({
   preview: {
     port: 4173,
     host: 'localhost'
-  }
+  },
+  // Add this for Vercel deployment
+  base: './'
 })
