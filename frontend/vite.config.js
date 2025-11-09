@@ -1,31 +1,10 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
+// Simple config without Terser
 export default defineConfig({
   plugins: [react()],
-  server: {
-    port: 5173,
-    host: 'localhost',
-    strictPort: false,
-    hmr: {
-      host: 'localhost',
-      port: 5173
-    }
-  },
   build: {
-    outDir: 'dist',
-    sourcemap: false,
-    minify: 'terser',
-    terserOptions: {
-      compress: {
-        drop_console: true
-      }
-    }
-  },
-  preview: {
-    port: 4173,
-    host: 'localhost'
-  },
-  // Add this for Vercel deployment
-  base: './'
+    outDir: 'dist'
+  }
 })
