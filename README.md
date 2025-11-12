@@ -10,9 +10,6 @@
 [![Live Demo](https://img.shields.io/badge/🚀-Live%20Demo-brightgreen)](https://news-portal-5oxi9lyyo-praneeth-376s-projects.vercel.app)
 
 **🌐 Live Application:** [https://news-portal-5oxi9lyyo-praneeth-376s-projects.vercel.app](https://news-portal-5oxi9lyyo-praneeth-376s-projects.vercel.app)
-
-**🔗 API Base URL:** [https://news-portal-zs8s.onrender.com/api](https://news-portal-zs8s.onrender.com/api)
-
 ---
 
 ## 📸 Screenshots
@@ -108,4 +105,5 @@ personalized-news-portal/
 ```bash
 git clone https://github.com/yourusername/personalized-news-portal.git
 cd personalized-news-portal
+
 
